@@ -1,0 +1,42 @@
+{
+  "name": "vscode-tmgrammar",
+  "publisher": "jpogran",
+  "displayName": "vscode-tmgrammar",
+  "description": "TextMate Grammar Snapshot Test syntax highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tmgrammar",
+        "aliases": [
+          "TextMate Grammar",
+          "tmgrammar"
+        ],
+        "extensions": [
+          ".snap"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tmgrammar",
+        "scopeName": "source.tmgrammar",
+        "path": "./syntaxes/tmgrammar.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "format": "prettier \"**/*.+(js|json|ts)\" --write"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "vsce": "^2.6.7"
+  }
+}

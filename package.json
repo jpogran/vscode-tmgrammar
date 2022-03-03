@@ -4,6 +4,9 @@
   "displayName": "vscode-tmgrammar",
   "description": "TextMate Grammar Snapshot Test syntax highlighting",
   "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/jpogran/vscode-tmgrammar"
+  },
   "engines": {
     "vscode": "^1.61.0"
   },
@@ -33,7 +36,8 @@
     ]
   },
   "scripts": {
-    "format": "prettier \"**/*.+(js|json|ts)\" --write"
+    "format": "prettier \"**/*.+(js|json|ts)\" --write",
+    "package": "vsce package"
   },
   "devDependencies": {
     "prettier": "^2.5.1",

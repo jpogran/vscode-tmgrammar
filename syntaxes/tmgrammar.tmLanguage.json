@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "TextMate Grammar",
+  "scopeName": "source.tmgrammar",
+  "fileTypes": ["snap"],
+  "patterns": [
+    {
+      "name": "entity.name.tmgrammar",
+      "match": "SYNTAX\\sTEST"
+    },
+    {
+      "name": "constant.language.tmgrammar",
+      "match": "(text|source)(\\.)(\\w+)"
+    },
+    {
+      "name": "keyword.operator.marker.tmgrammar",
+      "match": "\\^"
+    },
+    {
+      "name": "keyword.operator.marker.tmgrammar",
+      "match": "\\>"
+    },
+    {
+      "name": "keyword.operator.marker.tmgrammar",
+      "match": "\\#"
+    },
+    {
+      "name": "keyword.operator.marker.tmgrammar",
+      "match": "\\<\\~\\-"
+    },
+    {
+      "name": "keyword.operator.marker.tmgrammar",
+      "match": "\\<\\-"
+    },
+    {
+      "name": "constant.character.escape.tmgrammar",
+      "match": "\\;"
+    },
+    { "name": "comment.line.tmgrammar", "match": "(comment.line)" },
+    { "name": "comment.block.tmgrammar", "match": "(comment.block)" },
+    { "name": "constant.numeric.tmgrammar", "match": "(constant.numeric)" },
+    { "name": "constant.character.tmgrammar", "match": "(constant.character)" },
+    { "name": "constant.language.tmgrammar", "match": "(constant.language)" },
+    { "name": "constant.other.tmgrammar", "match": "(constant.other)" },
+    { "name": "entity.name.tmgrammar", "match": "(entity.name)" },
+    { "name": "entity.other.tmgrammar", "match": "(entity.other)" },
+    { "name": "keyword.control.tmgrammar", "match": "(keyword.control)" },
+    { "name": "keyword.operator.tmgrammar", "match": "(keyword.operator)" },
+    { "name": "keyword.other.tmgrammar", "match": "(keyword.other)" },
+    { "name": "meta.block.tmgrammar", "match": "(meta.block)" },
+    { "name": "meta.braces.tmgrammar", "match": "(meta.braces)" },
+    { "name": "punctuation.section.tmgrammar", "match": "(punctuation.section)" },
+    { "name": "storage.type.tmgrammar", "match": "(storage.type)" },
+    { "name": "storage.modifier.tmgrammar", "match": "(storage.modifier)" },
+    { "name": "string.quoted.tmgrammar", "match": "string.quoted.(single|double)" },
+    { "name": "string.unquoted.tmgrammar", "match": "string.unquoted" },
+    { "name": "string.interpolated.tmgrammar", "match": "(string.interpolated)" },
+    { "name": "string.regexp.tmgrammar", "match": "(string.regexp)" },
+    { "name": "string.other.tmgrammar", "match": "(string.other)" },
+    { "name": "variable.declaration.tmgrammar", "match": "(variable.declaration)" },
+    { "name": "variable.parameter.tmgrammar", "match": "(variable.parameter)" },
+    { "name": "variable.langauge.tmgrammar", "match": "(variable.langauge)" },
+    { "name": "variable.other.tmgrammar", "match": "(variable.other)" },
+    {
+      "include": "#strings"
+    }
+  ],
+  "repository": {}
+}
